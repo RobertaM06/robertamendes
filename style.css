@@ -1,14 +1,25 @@
 body{
+
     margin:0;
+
     display:flex;
+
     background:#081525;
+
     color:white;
-  font-family:'Inter', sans-serif;
+
+    font-family:'Inter', sans-serif;
+
 }
+
+/* ========================= */
+/* MENU LATERAL */
+/* ========================= */
 
 .sidebar{
 
     width:260px;
+
     height:100vh;
 
     background:#05101d;
@@ -23,9 +34,13 @@ body{
 
 .sidebar h1{
 
+    font-family:'Playfair Display', serif;
+
     color:#d4af37;
 
     margin-bottom:50px;
+
+    font-size:42px;
 
 }
 
@@ -39,13 +54,21 @@ body{
 
     margin:18px 0;
 
+    transition:0.3s;
+
 }
 
 .sidebar a:hover{
 
     color:#d4af37;
 
+    padding-left:8px;
+
 }
+
+/* ========================= */
+/* CONTEÚDO */
+/* ========================= */
 
 .conteudo{
 
@@ -54,6 +77,8 @@ body{
 }
 
 .conteudo h1{
+
+    font-family:'Playfair Display', serif;
 
     font-size:60px;
 
@@ -64,11 +89,25 @@ body{
 .conteudo h2{
 
     color:#d4af37;
-    .sidebar h1,
-.conteudo h1 {
 
-    font-family: 'Playfair Display', serif;
+    font-weight:500;
 
 }
+
+.conteudo h3{
+
+    font-weight:400;
+
+    font-size:26px;
+
+}
+
+.conteudo p{
+
+    max-width:700px;
+
+    line-height:1.8;
+
+    color:#d8d8d8;
 
 }
