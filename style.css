@@ -8,19 +8,17 @@ body{
 
     color:white;
 
-    font-family:'Inter', sans-serif;
+    font-family:'Inter',sans-serif;
 
 }
 
-/* ========================= */
-/* MENU LATERAL */
-/* ========================= */
+/* MENU */
 
 .sidebar{
 
     width:260px;
 
-    height:100vh;
+    min-height:100vh;
 
     background:#05101d;
 
@@ -30,17 +28,19 @@ body{
 
     box-sizing:border-box;
 
+    position:fixed;
+
 }
 
 .sidebar h1{
 
-    font-family:'Playfair Display', serif;
+    font-family:'Playfair Display',serif;
 
     color:#d4af37;
 
-    margin-bottom:50px;
-
     font-size:42px;
+
+    margin-bottom:50px;
 
 }
 
@@ -48,13 +48,13 @@ body{
 
     display:block;
 
-    color:white;
-
     text-decoration:none;
+
+    color:white;
 
     margin:18px 0;
 
-    transition:0.3s;
+    transition:.3s;
 
 }
 
@@ -66,19 +66,39 @@ body{
 
 }
 
-/* ========================= */
 /* CONTEÚDO */
-/* ========================= */
 
 .conteudo{
 
-    padding:80px;
+    margin-left:260px;
+
+    padding:70px;
+
+}
+
+.hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:70px;
+
+    margin-bottom:80px;
+
+}
+
+.texto{
+
+    flex:1;
 
 }
 
 .conteudo h1{
 
-    font-family:'Playfair Display', serif;
+    font-family:'Playfair Display',serif;
 
     font-size:60px;
 
@@ -90,44 +110,102 @@ body{
 
     color:#d4af37;
 
-    font-weight:500;
-
 }
 
 .conteudo h3{
 
-    font-weight:400;
+    font-size:24px;
 
-    font-size:26px;
+    font-weight:500;
 
 }
 
 .conteudo p{
 
-    max-width:700px;
-
     line-height:1.8;
 
-    color:#d8d8d8;
+    color:#d9d9d9;
 
 }
 
-/* ========================= */
 /* FOTO */
-/* ========================= */
 
 .foto-perfil{
 
-    width:250px;
+    width:270px;
 
-    height:250px;
-
-    object-fit:cover;
+    height:270px;
 
     border-radius:50%;
 
+    object-fit:cover;
+
     border:3px solid #d4af37;
 
-    margin:30px 0;
+}
+
+/* CARDS */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
 
 }
+
+.card{
+
+    display:block;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:#0e2037;
+
+    border:1px solid rgba(212,175,55,.35);
+
+    border-radius:18px;
+
+    padding:30px;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#d4af37;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+}
+
+.card h3{
+
+    font-family:'Playfair Display',serif;
+
+    margin-top:0;
+
+    color:#d4af37;
+
+}
+
+.card h4{
+
+    font-size:18px;
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    margin:0;
+
+}v
