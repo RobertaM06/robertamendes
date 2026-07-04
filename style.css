@@ -3,7 +3,7 @@ body{
     display:flex;
     background:#081525;
     color:white;
-    font-family:Arial, Helvetica, sans-serif;
+  font-family:'Inter', sans-serif;
 }
 
 .sidebar{
@@ -12,6 +12,8 @@ body{
     height:100vh;
 
     background:#05101d;
+
+    border-right:1px solid #d4af37;
 
     padding:40px;
 
@@ -62,5 +64,11 @@ body{
 .conteudo h2{
 
     color:#d4af37;
+    .sidebar h1,
+.conteudo h1 {
+
+    font-family: 'Playfair Display', serif;
+
+}
 
 }
